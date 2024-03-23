@@ -9,6 +9,7 @@ import Layout from './Layout/Layout';
 import Home from './Pages/Home';
 import Statistics from './Pages/Statistics';
 import Applied from './Pages/Applied';
+import JobDetails from './components/JobDetails';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,6 +27,14 @@ const router = createBrowserRouter([
         path:"/applied",
         element:<Applied></Applied>
       },
+      
+      {
+        path:"/applied/:applidID",
+        element:<JobDetails></JobDetails>,
+        loader:()=>fetch("../public/jobs.json")
+
+      },
+
     ]
   },
 ]);
