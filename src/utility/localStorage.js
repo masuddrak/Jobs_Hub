@@ -19,5 +19,9 @@ export const savLocalStorage = (id) => {
     }
     return
 }
-// // console.log(getLocalStorage())
-// export default (getLocalStorage, savLocalStorage)
+
+export const removeLocalItems=(id)=>{
+    const getAllLocalItems=getLocalStorage()
+    const macthedItem=getAllLocalItems.filter(Lid=>Lid !== id)
+    localStorage.setItem("applayJobs", JSON.stringify(macthedItem))
+}
