@@ -5,12 +5,12 @@ import Header from "../components/Header";
 
 const Layout = () => {
     return (
-        <div className=" flex flex-col">
+        <div className=" ">
             <Header></Header>
             <div className="container mx-auto  ">
                 <Outlet></Outlet>
             </div>
-            <div className="mt-5 flex-grow w-full">
+            <div className="mt-5 ">
 
              <Footer ></Footer>
             </div>

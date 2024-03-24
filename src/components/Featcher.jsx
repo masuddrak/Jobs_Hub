@@ -29,7 +29,7 @@ const Featcher = ({ feacher }) => {
                 </div>
             </div>
             <div>
-                <Link to={`/applieds/${id}`} rel="noopener noreferrer" href="#" className="px-2 py-2 text-lg font-semibold  rounded bg-green-600">view Details</Link>
+                <Link to={`/applieds/${id}`} rel="noopener noreferrer" href="#" className="px-2 py-2 text-lg font-semibold  rounded bg-success text-neutral">view Details</Link>
             </div>
         </div>
     );
