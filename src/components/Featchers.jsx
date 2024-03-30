@@ -36,11 +36,11 @@ const Featchers = () => {
         }
     }
     return (
-        <div>
+        <div id="#fechers">
 
             <div className="flex justify-center mb-10">
                 <div className="flex gap-4">
-                    <input ref={inputValu} type="text" placeholder="Type here" className="input input-bordered input-success w-full max-w-xs" />
+                    <input ref={inputValu} type="text" placeholder="Onsite/Remote" className="input input-bordered input-success w-full max-w-xs" />
                     <button onClick={handelSearch} className="btn btn-success">searche</button>
                 </div>
             </div>

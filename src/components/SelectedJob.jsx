@@ -1,5 +1,6 @@
 import { IoLocationOutline } from "react-icons/io5";
 import { HiOutlineCurrencyDollar } from "react-icons/hi2";
+import { Link } from "react-router-dom";
 const SelectedJob = ({ job ,removeItem}) => {
     const { id, logo, job_title, company_name, remote_or_onsite, location, job_type, salary } = job
    
@@ -35,7 +36,7 @@ const SelectedJob = ({ job ,removeItem}) => {
                     <button onClick={()=>removeItem(id)} className="bg-green-800 text-white px-4 py-2 font-bold rounded">Remove Job</button>
                 </div>
                 <div>
-                    <button className="bg-green-800 text-white px-4 py-2 font-bold rounded">View Details</button>
+                    <Link to={`/applieds/${id}`} className="bg-green-800 text-white px-4 py-2 font-bold rounded">View Details</Link>
                 </div>
             </div>
         </div>

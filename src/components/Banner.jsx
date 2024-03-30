@@ -5,7 +5,7 @@ const Banner = () => {
         <section className="dark:bg-gray-800 dark:text-gray-100">
             <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
                 <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-                    <h1 className="text-5xl font-bold leading-none sm:text-6xl">One Step Closer To Your Dream Job
+                    <h1 data-aos="fade-up" data-aos-duration="1000" className="text-5xl font-bold leading-none sm:text-6xl">One Step Closer To Your Dream Job
                     </h1>
                     <p className="mt-6 mb-8 text-lg sm:mb-12">Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.
                     </p>
@@ -15,7 +15,7 @@ const Banner = () => {
                     </div>
                 </div>
                 <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-                    <img src={banner} alt="" className="object-fill h-full" />
+                    <img data-aos="zoom-in"   data-aos-duration="1000" src={banner} alt="" className="object-fill h-full" />
                 </div>
             </div>
         </section>

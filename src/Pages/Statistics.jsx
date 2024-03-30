@@ -1,9 +1,11 @@
+import { getLocalStorage } from "../utility/localStorage";
 
 
 
 
 const Statistics = () => {
-   
+   const myLocalJobs=getLocalStorage()
+   console.log(myLocalJobs)
 
     
     return (

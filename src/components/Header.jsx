@@ -3,9 +3,16 @@ import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
     const nav = <>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/statistics'>Statistics</NavLink></li>
-        <li><NavLink to='/applied'>Applied Jobs</NavLink></li>
+        <NavLink to='/' className={({ isActive }) =>
+            isActive ? "border-1 text-green-600" : isActive ? "active" : ""
+        }>Home</NavLink>
+        <NavLink to='/applied' className={({ isActive }) =>
+            isActive ? "border-1 text-green-600" : isActive ? "active" : ""
+        }>Applied Jobs</NavLink>
+        <NavLink to='/statistics' className={({ isActive }) =>
+            isActive ? "border-1 text-green-600" : isActive ? "active" : ""
+        }>Statistics</NavLink>
+
 
     </>
     return (
@@ -23,12 +30,12 @@ const Header = () => {
                     <Link to="/" className="btn btn-ghost text-2xl font-bold">CareerHub</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 text-xl font-bold">
+                    <ul className="menu menu-horizontal px-1 text-xl font-bold gap-5">
                         {nav}
                     </ul>
                 </div>
                 <div className="navbar-end">
-                <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold border rounded border-green-600">Star Applying</a>
+                    <a rel="noopener noreferrer" href="fechers" className="px-8 py-3 text-lg font-semibold border rounded border-green-600">Star Applying</a>
                 </div>
             </div>
         </div>

@@ -1,7 +1,10 @@
 import { Outlet } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const Layout = () => {
     return (
@@ -14,6 +17,7 @@ const Layout = () => {
 
              <Footer ></Footer>
             </div>
+          
         </div>
     );
 };

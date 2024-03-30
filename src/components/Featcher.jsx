@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Featcher = ({ feacher }) => {
     const { id, logo, job_title, company_name, remote_or_onsite, location, job_type, salary } = feacher
     return (
-        <div className="shadow-xl p-6 space-y-3">
+        <div data-aos="zoom-in"   data-aos-duration="1000" className="shadow-xl p-6 space-y-3">
             <div className="h-[70px] w-[150px]">
                 <img className="object-fill w-full h-full" src={logo} alt="" />
             </div>

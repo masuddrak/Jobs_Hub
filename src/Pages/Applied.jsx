@@ -10,12 +10,14 @@ const Applied = () => {
         if (catagry == "all") {
             setDisplayJobs(selectedJob)
         }
-        else if (catagry = "remote") {
-            const filterRemoteJob = selectedJob.filter(job => job.remote_or_onsite == "Remote")
+        else if (catagry == "remote") {
+            let filterRemoteJob = selectedJob.filter(job => job.remote_or_onsite == "Remote")
+            console.log(filterRemoteJob)
             setDisplayJobs(filterRemoteJob)
         }
-        else if (catagry = "onsite") {
-            const filterRemoteJob = selectedJob.filter(job => job.remote_or_onsite == "Onsite")
+        else if (catagry == "onsite") {
+            let filterRemoteJob = selectedJob.filter(job => job.remote_or_onsite == "Onsite")
+            console.log(filterRemoteJob)
             setDisplayJobs(filterRemoteJob)
         }
     }
